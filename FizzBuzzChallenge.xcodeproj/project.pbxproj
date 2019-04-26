@@ -8,20 +8,24 @@
 
 /* Begin PBXBuildFile section */
 		3BB73C162273BED200EF1159 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BB73C152273BED200EF1159 /* AppDelegate.swift */; };
-		3BB73C182273BED200EF1159 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BB73C172273BED200EF1159 /* ViewController.swift */; };
 		3BB73C1B2273BED200EF1159 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3BB73C192273BED200EF1159 /* Main.storyboard */; };
 		3BB73C1D2273BED400EF1159 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3BB73C1C2273BED400EF1159 /* Assets.xcassets */; };
 		3BB73C202273BED400EF1159 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3BB73C1E2273BED400EF1159 /* LaunchScreen.storyboard */; };
+		3BB73C282273C14100EF1159 /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BB73C272273C14100EF1159 /* Model.swift */; };
+		3BB73C2D2273C1C800EF1159 /* SecondVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BB73C2C2273C1C800EF1159 /* SecondVC.swift */; };
+		3BB73C2F2273C1D700EF1159 /* FirstVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BB73C2E2273C1D700EF1159 /* FirstVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		3BB73C122273BED200EF1159 /* FizzBuzzChallenge.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FizzBuzzChallenge.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3BB73C152273BED200EF1159 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		3BB73C172273BED200EF1159 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		3BB73C1A2273BED200EF1159 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		3BB73C1C2273BED400EF1159 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3BB73C1F2273BED400EF1159 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3BB73C212273BED400EF1159 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3BB73C272273C14100EF1159 /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
+		3BB73C2C2273C1C800EF1159 /* SecondVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondVC.swift; sourceTree = "<group>"; };
+		3BB73C2E2273C1D700EF1159 /* FirstVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -39,6 +43,7 @@
 			isa = PBXGroup;
 			children = (
 				3BB73C142273BED200EF1159 /* FizzBuzzChallenge */,
+				3BB73C2A2273C16600EF1159 /* Resources */,
 				3BB73C132273BED200EF1159 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -54,14 +59,39 @@
 		3BB73C142273BED200EF1159 /* FizzBuzzChallenge */ = {
 			isa = PBXGroup;
 			children = (
-				3BB73C152273BED200EF1159 /* AppDelegate.swift */,
-				3BB73C172273BED200EF1159 /* ViewController.swift */,
+				3BB73C2B2273C17500EF1159 /* ViewController */,
+				3BB73C292273C14700EF1159 /* Model */,
 				3BB73C192273BED200EF1159 /* Main.storyboard */,
+			);
+			path = FizzBuzzChallenge;
+			sourceTree = "<group>";
+		};
+		3BB73C292273C14700EF1159 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				3BB73C272273C14100EF1159 /* Model.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		3BB73C2A2273C16600EF1159 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				3BB73C152273BED200EF1159 /* AppDelegate.swift */,
 				3BB73C1C2273BED400EF1159 /* Assets.xcassets */,
 				3BB73C1E2273BED400EF1159 /* LaunchScreen.storyboard */,
 				3BB73C212273BED400EF1159 /* Info.plist */,
 			);
-			path = FizzBuzzChallenge;
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		3BB73C2B2273C17500EF1159 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				3BB73C2E2273C1D700EF1159 /* FirstVC.swift */,
+				3BB73C2C2273C1C800EF1159 /* SecondVC.swift */,
+			);
+			path = ViewController;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -135,7 +165,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3BB73C182273BED200EF1159 /* ViewController.swift in Sources */,
+				3BB73C282273C14100EF1159 /* Model.swift in Sources */,
+				3BB73C2F2273C1D700EF1159 /* FirstVC.swift in Sources */,
+				3BB73C2D2273C1C800EF1159 /* SecondVC.swift in Sources */,
 				3BB73C162273BED200EF1159 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -284,7 +316,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 5EAUJPVR66;
-				INFOPLIST_FILE = FizzBuzzChallenge/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/Resources/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -302,7 +334,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 5EAUJPVR66;
-				INFOPLIST_FILE = FizzBuzzChallenge/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/Resources/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
