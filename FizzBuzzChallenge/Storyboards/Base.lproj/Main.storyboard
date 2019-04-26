@@ -20,7 +20,7 @@
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="yQ8-5L-JP2">
                                 <rect key="frame" x="8" y="64" width="398" height="729"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="backgroundColor" red="0.09399282246" green="0.63764785800000001" blue="0.7760867884" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="FizzCell" id="DVh-s0-z8S" customClass="FizzCustomTVCell" customModule="FizzBuzzChallenge" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="28" width="398" height="44"/>
@@ -29,18 +29,20 @@
                                             <rect key="frame" x="0.0" y="0.0" width="398" height="43.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="v8p-NL-vLV">
-                                                    <rect key="frame" x="30" y="11.5" width="42" height="21"/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                    <nil key="textColor"/>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="v8p-NL-vLV">
+                                                    <rect key="frame" x="30" y="7" width="338" height="30"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                             </subviews>
                                             <constraints>
                                                 <constraint firstItem="v8p-NL-vLV" firstAttribute="centerY" secondItem="qnT-8x-49c" secondAttribute="centerY" id="Dkr-dM-Xxg"/>
+                                                <constraint firstAttribute="trailingMargin" secondItem="v8p-NL-vLV" secondAttribute="trailing" constant="10" id="WuC-5x-GbY"/>
                                                 <constraint firstItem="v8p-NL-vLV" firstAttribute="leading" secondItem="qnT-8x-49c" secondAttribute="leadingMargin" constant="10" id="Z4w-TX-rIa"/>
                                             </constraints>
                                         </tableViewCellContentView>
+                                        <color key="backgroundColor" red="0.09399282246" green="0.63764785800000001" blue="0.7760867884" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <connections>
                                             <outlet property="titleLabel" destination="v8p-NL-vLV" id="fle-mC-flU"/>
                                         </connections>
@@ -48,7 +50,7 @@
                                 </prototypes>
                             </tableView>
                         </subviews>
-                        <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="backgroundColor" red="0.09399282246" green="0.63764785800000001" blue="0.7760867884" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="yQ8-5L-JP2" firstAttribute="top" secondItem="76k-Zs-1fD" secondAttribute="top" constant="20" id="DWI-gQ-aRS"/>
                             <constraint firstItem="76k-Zs-1fD" firstAttribute="trailing" secondItem="yQ8-5L-JP2" secondAttribute="trailing" constant="8" id="anG-Oq-y1I"/>
@@ -73,7 +75,7 @@
                     <view key="view" contentMode="scaleToFill" id="5e1-aK-xBP">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="backgroundColor" red="0.28111593568460047" green="1" blue="0.27782281465859937" alpha="0.89106477649006621" colorSpace="custom" customColorSpace="sRGB"/>
                         <viewLayoutGuide key="safeArea" id="SJa-Al-19j"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="First" id="kLB-rm-mhJ" userLabel="First"/>
@@ -89,7 +91,9 @@
                     <toolbarItems/>
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="P9a-5p-vYi">
                         <autoresizingMask key="autoresizingMask"/>
-                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="barTintColor" cocoaTouchSystemColor="viewFlipsideBackgroundColor"/>
                     </tabBar>
                     <connections>
                         <segue destination="v7I-KL-ajB" kind="relationship" relationship="viewControllers" id="dG1-JF-iuP"/>
@@ -101,4 +105,5 @@
             <point key="canvasLocation" x="1246" y="83"/>
         </scene>
     </scenes>
+    <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
 </document>

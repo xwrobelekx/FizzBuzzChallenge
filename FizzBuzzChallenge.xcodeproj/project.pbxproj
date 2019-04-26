@@ -61,7 +61,7 @@
 			children = (
 				3BB73C302273C5CF00EF1159 /* Views */,
 				3BB73C2B2273C17500EF1159 /* ViewController */,
-				3BB73C192273BED200EF1159 /* Main.storyboard */,
+				3BB73C332273CA5800EF1159 /* Storyboards */,
 			);
 			path = FizzBuzzChallenge;
 			sourceTree = "<group>";
@@ -71,7 +71,6 @@
 			children = (
 				3BB73C152273BED200EF1159 /* AppDelegate.swift */,
 				3BB73C1C2273BED400EF1159 /* Assets.xcassets */,
-				3BB73C1E2273BED400EF1159 /* LaunchScreen.storyboard */,
 				3BB73C212273BED400EF1159 /* Info.plist */,
 			);
 			path = Resources;
@@ -92,6 +91,15 @@
 				3BB73C312273C5FB00EF1159 /* FizzCustomTVCell.swift */,
 			);
 			path = Views;
+			sourceTree = "<group>";
+		};
+		3BB73C332273CA5800EF1159 /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				3BB73C192273BED200EF1159 /* Main.storyboard */,
+				3BB73C1E2273BED400EF1159 /* LaunchScreen.storyboard */,
+			);
+			path = Storyboards;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
